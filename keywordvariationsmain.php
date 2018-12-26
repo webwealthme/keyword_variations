@@ -28,12 +28,7 @@ function test_input($data) {
   <textarea name="statefull" cols="20" rows="1"><?php echo $comment;?></textarea></td></tr>
   </table>
      <br><br>
- <!--  Option 1/2:
-   <select name="calltoacttype">
-<option value="">Buy Now</option>
-<option value="">Learn More</option>
-</select>
-  <br><br>-->
+
    <input type="submit" name="submit" value="Submit"> 
 </form>
 <h2>Copy the keyword variations below and put in adwords to see search traffic</h2>
@@ -58,19 +53,11 @@ $statefull  = $_POST["statefull"];
 $statefullpieces = explode("\n", $statefull);
 $totalstatefull = count($statefullpieces);
 
-/*if ($_POST["kw"]==NULL)
-{$kw = $city = $stateabbr = $statefull = "";}*/
-
 $counterkw=0; $countercity=0; $counterstatefull=0; $counterstateabbr=0; $counterkw2=0; $counterkw3=0; $countercity2=0;
 
 $totalkwvariations= ($totalkw*$totalcity);
 $totalkwvariationscounter=0;
 
-/*echo $totalkw;
-echo $totalcity;
-echo $totalstateabbr;
-echo $totalstatefull;
-*/
 while ($totalkwvariationscounter!=$totalkwvariations)
 {
 
@@ -120,8 +107,6 @@ $totalkwvariationscounter++;
 }
 
 ?>
-
-
 
 </div>
 <p></p>
